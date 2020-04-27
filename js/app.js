@@ -1,6 +1,6 @@
 const countEl = document.getElementById('count');
 currentNum()
-
+timedRefresh(10000)
 // https://api.countapi.xyz/hit/youtube.com/
 
 function currentNum (){
@@ -11,3 +11,6 @@ function currentNum (){
 	})
 }
 
+function timedRefresh(time){
+	setTimeout(()=>{location.reload(true)},time);
+}

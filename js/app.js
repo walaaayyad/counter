@@ -1,6 +1,8 @@
 const countEl = document.getElementById('count');
 currentNum()
-timedRefresh(10000)
+// timedRefresh(60000)//1min
+timedRefresh(120000)//2min
+
 // https://api.countapi.xyz/hit/youtube.com/
 
 function currentNum (){

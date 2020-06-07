@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
-
+/* @import url('./font-awesome.min.css');  */
 * {
+	direction: rtl;
 	box-sizing: border-box;
 }
 @font-face {
@@ -8,24 +9,114 @@
 	src:url(../Font/Amiri-Bold.ttf);
 }
 body {
-	background-color: #192a56;
+
+	/* background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,0,0,1) 100%); */
+
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(0,0,100,1) 0%, rgba(9,9,121,1) 50%, rgba(0,0,100,1) 100%);
+
 	color: #fff;
+	height: 100vh;
 	font-family: 'Amiri-Bold','Muli', sans-serif;
 	flex-direction: column;
 	display: flex;
 	margin: 0;
 }
-section{
+/******************************/
+/* Alaa Add it  */
+/* https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp */
+ /* The sidebar menu */
+ .sidebar {
+	height: 100%; 
+	/* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #fff; /* Black*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.9s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #111;
+	background-color: #fff;
+	display: block;
+	transition: 0.3s;
+	font-size: large;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+	color: #818181;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+	/* font-size: 20px; */
+	font-size: 2rem;
+	cursor: pointer;
+	/* background-color: #192a56; */
+	/* background-color:#02012e ; */
+	background-color: #010167;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+  }
+  
+  .openbtn:hover {
+	background-color: #444;
+  }
+  section{
 	display: flex;
 	margin: 0;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 1.4rem;
-}
+  }
+  .Hashtag {
+	  text-align: right;
+	  float: right;
+	  color: red;
+  }
+  /* header{
+	
+  } */
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  /* #main { */
+	/* If you want a transition effect */
+/* transition: margin-left .5s; 
+
+	padding: 20px;
+  } */
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  /* @media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }  */
+
+/*******************************/
 h1 {
 	/* font-size: 50px; */
-	margin: 0;
+	margin: 10px;
 	font-family: 'Muli';
 }
 
@@ -33,11 +124,13 @@ h1 {
 	font-weight: bolder;
 }
 h2{
-	font-size: xx-large;
+	font-size: x-large;
 	text-align: center;
-
+	margin: auto;
 }
-
+.margeBott{
+	margin-bottom: 1.5rem;
+}
 p {
 	color: rgba(255, 255, 255, 0.8);
 	letter-spacing: 2px;
@@ -45,10 +138,12 @@ p {
 	font-size: xx-large;
 }
 
-a{
+.buttona{
 	text-decoration: none;
-	color: black;
-	background: #fff;
+	/* color: black;
+	background: #fff; */
+	color: #fff;
+	background-color: #007fde;
 	font-size: large;
 	font-weight: bold;
 	border-radius: 5px;
@@ -56,13 +151,17 @@ a{
   }
 .right{
 	float: right;
-	margin-left:3rem;
+	margin-right:3rem;
+}
+nav{
+	/* float: left; */
+	margin: 10px;
 }
 .left{
 	float: left;
 }
 #plus{
-	width: 100%;
+	width: 90%;
 	height: 100px;
 	background-color: green;
 	color: #fff;
@@ -71,6 +170,57 @@ a{
 	border-radius: 10px;
 	margin-top: 1.4rem;
 }
+.icon{
+	max-height: 25px;
+	max-width: 25px;
+}
+/* .regstration> h1{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+	font-size: medium;
+	color: #fff;
+}
+.regstration>p{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+	font-size: medium;
+	color: #fff;
+} */
+
+.regstration>iframe{
+	height: 2000px;
+}
+.Reg-SugHeader-Pra{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+}
+.s{
+	font-size: small;
+}
+.m{
+	font-size: medium;
+}
+.l{
+	font-size: large;
+}
+.xl{
+	font-size: x-large;
+}
+.xxl{
+font-size: xx-large;
+}
+.sugstion>iframe{
+	height: 1042px;
+}
+/* .sugstion>a{
+	color: #fff;
+} */
 footer{
 	display: flex;
 	margin: 0;
@@ -80,9 +230,19 @@ footer{
 	justify-content: center;
 	padding-bottom: 1.4rem;
 }
-
+iframe{
+	width: 100%;
+	/* height:	2040px; */
+}
 @media only screen and (min-width: 600px) {
 	#plus{
 		width: 41%;
 	}
+
+}
+.inline{
+	display: inline;
+}
+.title{
+	font-family: 'Amiri-Bold'
 }

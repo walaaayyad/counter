@@ -1,0 +1,142 @@
+/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); */
+
+* {
+	direction: ltr;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family:'Amiri-Bold';
+	src:url(../Font/Amiri-Bold.ttf);
+}
+body {
+	background-color: #192a56;
+	color: #fff;
+	font-family: 'Amiri-Bold','Muli', sans-serif;
+	flex-direction: column;
+	display: flex;
+	margin: 0;
+}
+section{
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1.4rem;
+}
+h1 {
+	/* font-size: 50px; */
+	margin: 0;
+	font-family: 'Muli';
+}
+
+#count{
+	font-weight: bolder;
+}
+h2{
+	font-size: x-large;
+	text-align: center;
+	margin: auto;
+}
+.margeBott{
+	margin-bottom: 1.5rem;
+}
+p {
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 2px;
+	margin: 0;
+	font-size: xx-large;
+}
+
+a{
+	text-decoration: none;
+	/* color: black; */
+	/* background: #fff; */
+	color: #fff;
+	background-color: #007fde;
+	font-size: large;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 8px;
+  }
+.right{
+	float: right;
+	/* margin-right:3rem; */
+}
+nav{
+	/* float: left; */
+	margin: 10px;
+}
+.left{
+	float: left;
+}
+#plus{
+	width: 90%;
+	height: 100px;
+	background-color: green;
+	color: #fff;
+	font-size: xx-large;
+	font-family: 'Amiri-Bold','Muli', sans-serif;
+	border-radius: 10px;
+	margin-top: 1.4rem;
+}
+/* .regstration> h1{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+	font-size: medium;
+	color: #fff;
+}
+.regstration>p{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+	font-size: medium;
+	color: #fff;
+} */
+
+.regstration> h1{
+	font-size: xx-large;
+}
+.regstration>iframe{
+	height: 2000px;
+}
+.Reg-SugHeader-Pra{
+	font-family: 'Amiri-Bold';
+	margin-right: 2rem;
+	text-align: center;
+	margin-left: 2rem;
+}
+.M{
+	font-size: medium;
+}
+.xxL{
+font-size: xx-large;
+}
+.sugstion>iframe{
+	height: 1042px;
+}
+/* .sugstion>a{
+	color: #fff;
+} */
+footer{
+	display: flex;
+	margin: 0;
+	margin-top: 2rem;
+	/* flex-direction: column; */
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 1.4rem;
+}
+iframe{
+	width: 100%;
+	/* height:	2040px; */
+}
+@media only screen and (min-width: 600px) {
+	#plus{
+		width: 41%;
+	}
+
+}

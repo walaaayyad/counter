@@ -2,66 +2,63 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="سجل شركتك/جهتك معنا مجانا بهدف الحفاظ على صحتك وصحة من حولك (#حافظ_على_المسافة_الامنه #دورك_محفوظ #صحتك_في_بعدك #الدايرة_بتقرب"/>
+    <meta name="description" content="خد دورك وإقضي مشاويرك"/>
     <meta name="keywords" content="bldor,بالدور,بلدور,بدور,دورك,دوري,baldor,beldor,bldoor,beldoor,baldoor,الصحة,صحتي,صحتك,تباعد"/>
     <meta name="author" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel ='stylesheet' href='../css/main.css'/>
+	<link rel ='stylesheet' href='../css/style.css'/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="icon" href="../../image/favicon-icon.jpg"/>
-    <title>BLdOR | إجعلها كبرنامج بالدور</title>
+    <title>BLdOR | بالدور</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
 <body>
     <header>
         <h1 class="left">BLdOR</h1>
-        <div id="mySidebar" class="sidebar right">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../index.html">الصفحة الرئيسية</a>
-            <a href="./registration.html">تسجيل الجهة</a>
-            <!-- <a href="./about.html">من نحن</a> -->
-            <a href="./sugstions.html">مقترحات ومشاكل</a>
-            <a href="https://api.whatsapp.com/send?phone=201228838384&text=&source=&data=&app_absent=" target="_blank">
-                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                إتصل بنا
-            </a>
-            <a href="./SupportUs.html">إزاي تدعمنا</a>
-            <!-- <a href="../en.html">EN</a> -->
-        </div>
-          
-          <!-- <div id="main"> -->
-            <!-- <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button> -->
-        <button class="openbtn" onclick="openNav()">&#9776;</button>
-          <!-- </div> -->
+        <div class="side-bar">
+            <input type="checkbox" name="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="./../index.html">الصفحة الرئيسية</a></li>
+                    <li><a href="../pages/registration.html">تسجيل جهة</a></li>
+                    <li><a href="../pages/about.html">من نحن</a></li>
+                    <li><a href="../pages/sugstions.html">مقترحات ومشاكل</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=201228838384&text=&source=&data=&app_absent=" target="_blank">
+                        إتصل بنا <i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="../pages/SupportUs.html">إزاي تدعمنا</a></li>
+                    <li><a href="#">إضافه البرنامج</a></li>
 
+                </ul>
+            </div>
+        </div>
     </header>
     
-    <section onclick="closeNav()">
-        <!-- <h2>خد دورك وإقضي مشاويرك</h2>
-        <h2> وفر وقتك مع <span>BLdOR</span></h2> -->
-        <!-- <h2>خد دورك ... وفر وقتك</h2>
-        <h2 class="margeBott"> حافظ على صحتك</h2> -->
-
-        <!-- <h2>مرعوب من الزحمة .. خايف على الصحة</h2>
-        <h2 class="margeBott"> من غير طابور .. دورك معاك</h2> -->
-        <h2> علشان نسهل عليك الوصول لينا بنقترح تحط خدمتنا على موبايلك من خلال بعض الخطوات</h2>
-        <p>لو سمحت إختار المتصفح إللي بتستخدمه</p>
-        <div class="inline">
-            <a><img class="icon" src="../image/firefox.png"/></a>
-            <a><img class="icon" src="../image/chrome.png"/></a>
-            <a><img class="icon" src="../image/opera.png"/></a>
-            <a><img class="icon" src="../image/safari.png"/></a>
-            <a onclick="skip()">تخطي</a>
+    <section>
+        <div class="addToHomeScreen-parts">
+            <h2>إضافة صفحتنا</h2>
+            <p> علشان نسهل عليك الوصول لينا بنقترح تحط خدمتنا على موبايلك من خلال بعض الخطوات</p>
+            <p>لو سمحت إختار المتصفح إللي بتستخدمه</p>
+                <div class="inline">
+                    <a><img class="icon" src="../image/firefox.png"/></a>
+                    <a><img class="icon" src="../image/chrome.png"/></a>
+                    <a><img class="icon" src="../image/opera.png"/></a>
+                    <a><img class="icon" src="../image/safari.png"/></a>
+                </div>
+                <a onclick="skip()" class="buttona btn" >تخطي</a>
         </div>
-        <h2>إذا عجبتك الفكرة تواصل معنا نطبقها في نشاطك مجانا</h2>
-        
-        <a href="#" onclick="back()" class="buttona"> للرجوع </a>
 
+        <div class="addToHomeScreen-parts">
+            <p>إذا عجبتك الفكرة تواصل معنا نطبقها في نشاطك مجانا</p>
+            <a href="#" onclick="back()" class="buttona"> للرجوع </a>
+        </div>
     </section>
-    <footer  onclick="closeNav()">
-        <!-- <p>إدعمنا بالنشر</p> -->
-        <script src="../js/main.js"></script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ed8f438791ae46a"></script>
+    
+    <footer>
+        <p>all rights reserved &copy; 2020 bldor.com<p>
     </footer>
+
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ed8f438791ae46a"></script>
 </body>
 </html>
